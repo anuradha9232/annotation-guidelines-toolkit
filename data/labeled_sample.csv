@@ -1,0 +1,41 @@
+id,description,annotator_a,annotator_b,gold
+T001,SWIGGY BANGALORE,Food & Dining,Food & Dining,Food & Dining
+T002,ZOMATO ONLINE ORDER,Food & Dining,Food & Dining,Food & Dining
+T003,BIGBASKET SUPERMARKET,Groceries,Groceries,Groceries
+T004,DMART AVENUE PVT LTD,Groceries,Groceries,Groceries
+T005,UBER TRIP 0412,Transport,Transport,Transport
+T006,OLA CABS RIDE,Transport,Transport,Transport
+T007,IRCTC TRAIN TICKET,Transport,Transport,Transport
+T008,INDIAN OIL PETROL PUMP,Transport,Utilities,Transport
+T009,BESCOM ELECTRICITY BILL,Utilities,Utilities,Utilities
+T010,AIRTEL POSTPAID BILL,Utilities,Utilities,Utilities
+T011,ACT FIBERNET BROADBAND,Utilities,Utilities,Utilities
+T012,AMAZON IN ORDER 7781,Shopping,Shopping,Shopping
+T013,FLIPKART INTERNET PVT,Shopping,Shopping,Shopping
+T014,MYNTRA DESIGNS,Shopping,Shopping,Shopping
+T015,SALARY CREDIT ACME LTD,Income,Income,Income
+T016,INTEREST CREDIT SB ACCT,Income,Income,Income
+T017,UPI/RAHUL SHARMA/PAYMENT,Transfers,Transfers,Transfers
+T018,NEFT TO SELF HDFC,Transfers,Transfers,Transfers
+T019,IMPS P2P TRANSFER,Transfers,Transfers,Transfers
+T020,SMS CHARGES GST,Fees & Charges,Fees & Charges,Fees & Charges
+T021,ATM WITHDRAWAL CHARGE,Fees & Charges,Fees & Charges,Fees & Charges
+T022,ANNUAL DEBIT CARD FEE,Fees & Charges,Fees & Charges,Fees & Charges
+T023,NETFLIX SUBSCRIPTION,Entertainment,Entertainment,Entertainment
+T024,BOOKMYSHOW TICKETS,Entertainment,Entertainment,Entertainment
+T025,SPOTIFY INDIA,Entertainment,Shopping,Entertainment
+T026,APOLLO PHARMACY,Health,Health,Health
+T027,PRACTO CONSULTATION,Health,Health,Health
+T028,1MG TECHNOLOGIES,Health,Groceries,Health
+T029,STARBUCKS COFFEE,Food & Dining,Food & Dining,Food & Dining
+T030,RELIANCE FRESH,Groceries,Groceries,Groceries
+T031,PVR CINEMAS,Entertainment,Entertainment,Entertainment
+T032,CRED RENT PAYMENT,Other,Transfers,Other
+T033,LIC PREMIUM DEBIT,Other,Other,Other
+T034,UPI/GROCERY STORE/PAY,Groceries,Groceries,Groceries
+T035,PHONEPE RECHARGE AIRTEL,Utilities,Utilities,Utilities
+T036,AMAZON PRIME MEMBERSHIP,Entertainment,Shopping,Entertainment
+T037,HP PETROL STATION,Transport,Transport,Transport
+T038,REFUND AMAZON ORDER,Income,Shopping,Income
+T039,SWIGGY INSTAMART,Groceries,Food & Dining,Groceries
+T040,UNKNOWN MERCHANT 4521,Other,Other,Other

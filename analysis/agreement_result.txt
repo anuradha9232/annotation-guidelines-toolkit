@@ -1,0 +1,5 @@
+Items labeled:        40
+Disagreements:        7
+Raw agreement (Po):   0.825
+Chance agreement (Pe):0.093
+Cohen's kappa:        0.807
