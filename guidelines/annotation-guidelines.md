@@ -4,7 +4,7 @@
 
 **Version:** 1.2 (see [`../CHANGELOG.md`](../CHANGELOG.md))
 
-These guidelines exist so that two different annotators, reading the same transaction, land on the same label. Where the raw text is ambiguous, the **decision rules** and **edge cases** below decide the answer — an annotator should never have to guess.
+These guidelines exist so that two different annotators, reading the same transaction, land on the same label. Where the raw text is ambiguous, the **decision rules** and **edge cases** below decide the answer - an annotator should never have to guess.
 
 ---
 
@@ -14,7 +14,7 @@ Assign **one and only one** of these 11 categories:
 
 | Label | Use it for |
 |---|---|
-| **Food & Dining** | Restaurants, cafés, food-delivery of prepared meals (Swiggy, Zomato, Starbucks) |
+| **Food & Dining** | Restaurants, cafes, food-delivery of prepared meals (Swiggy, Zomato, Starbucks) |
 | **Groceries** | Supermarkets, grocery delivery, daily provisions (BigBasket, DMart, Reliance Fresh, Swiggy Instamart) |
 | **Transport** | Ride-hailing, fuel, public transport, train/flight tickets (Uber, Ola, petrol pumps, IRCTC) |
 | **Utilities** | Electricity, water, gas, mobile, broadband, DTH bills and recharges |
@@ -32,17 +32,17 @@ Assign **one and only one** of these 11 categories:
 
 Apply these in order:
 
-1. **Identify the merchant first.** The merchant name usually decides the category, even if other words are present. "AMAZON PRIME MEMBERSHIP" is Amazon, but the *thing bought* (Prime = streaming) decides it — see Rule 3.
-2. **Categorise by what was bought, not who sold it,** when a merchant sells across categories. Amazon selling a book → Shopping; Amazon Prime video subscription → Entertainment.
-3. **Direction matters.** Money *in* (credits) is almost always **Income** or **Transfers**, never Shopping/Groceries. A "REFUND" is money coming back in → **Income**.
+1. **Identify the merchant first.** The merchant name usually decides the category, even if other words are present. "AMAZON PRIME MEMBERSHIP" is Amazon, but the *thing bought* (Prime = streaming) decides it - see Rule 3.
+2. **Categorise by what was bought, not who sold it,** when a merchant sells across categories. Amazon selling a book -> Shopping; Amazon Prime video subscription -> Entertainment.
+3. **Direction matters.** Money *in* (credits) is almost always **Income** or **Transfers**, never Shopping/Groceries. A "REFUND" is money coming back in -> **Income**.
 4. **A transfer has no goods or service.** If money moves to a person or to your own account with nothing purchased, it's **Transfers**. If it pays for something, use the specific category.
 5. **Bank-levied costs are Fees & Charges,** even when the word "GST" appears (e.g. "SMS CHARGES GST").
 6. **If two categories genuinely fit, use the more specific one.** Health beats Groceries for a pharmacy; Groceries beats Food & Dining for instant-grocery delivery.
-7. **Only use "Other" as a last resort** — when the merchant is unidentifiable or the transaction fits no category.
+7. **Only use "Other" as a last resort** - when the merchant is unidentifiable or the transaction fits no category.
 
 ---
 
-## 3. Edge cases (these were real disagreements — follow the ruling)
+## 3. Edge cases (these were real disagreements - follow the ruling)
 
 These cases caused annotators to split. The ruling is now fixed so future labeling is consistent.
 
@@ -59,12 +59,12 @@ These cases caused annotators to split. The ruling is now fixed so future labeli
 
 ## 4. Worked examples
 
-- `BESCOM ELECTRICITY BILL` → **Utilities** (home service, billed).
-- `UPI/RAHUL SHARMA/PAYMENT` → **Transfers** (paid to a person, no goods).
-- `STARBUCKS COFFEE` → **Food & Dining** (prepared food/drink).
-- `SALARY CREDIT ACME LTD` → **Income** (money in, salary).
-- `ANNUAL DEBIT CARD FEE` → **Fees & Charges** (bank-levied cost).
-- `UNKNOWN MERCHANT 4521` → **Other** (unidentifiable).
+- `BESCOM ELECTRICITY BILL` -> **Utilities** (home service, billed).
+- `UPI/RAHUL SHARMA/PAYMENT` -> **Transfers** (paid to a person, no goods).
+- `STARBUCKS COFFEE` -> **Food & Dining** (prepared food/drink).
+- `SALARY CREDIT ACME LTD` -> **Income** (money in, salary).
+- `ANNUAL DEBIT CARD FEE` -> **Fees & Charges** (bank-levied cost).
+- `UNKNOWN MERCHANT 4521` -> **Other** (unidentifiable).
 
 ---
 
@@ -72,6 +72,6 @@ These cases caused annotators to split. The ruling is now fixed so future labeli
 
 If, after applying all rules, a transaction still fits two categories equally, pick the one **earlier** in this priority order and flag the item for review:
 
-**Income → Transfers → Fees & Charges → Health → Utilities → Transport → Groceries → Food & Dining → Entertainment → Shopping → Other**
+**Income -> Transfers -> Fees & Charges -> Health -> Utilities -> Transport -> Groceries -> Food & Dining -> Entertainment -> Shopping -> Other**
 
-Flagging (rather than silently guessing) is how the guidelines improve — every flagged item is a candidate for a new edge-case ruling in the next version.
+Flagging (rather than silently guessing) is how the guidelines improve - every flagged item is a candidate for a new edge-case ruling in the next version.

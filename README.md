@@ -1,6 +1,6 @@
-# Annotation Guidelines Toolkit — Transaction Categorization
+# Annotation Guidelines Toolkit - Transaction Categorization
 
-A complete, small data-annotation project: a **guidelines document**, a **hand-labeled sample dataset**, and an **inter-annotator agreement** check. It shows annotation from the side that matters most for quality — writing the rules that make labeling consistent, then measuring whether they worked.
+A complete, small data-annotation project: a **guidelines document**, a **hand-labeled sample dataset**, and an **inter-annotator agreement** check. It shows annotation from the side that matters most for quality - writing the rules that make labeling consistent, then measuring whether they worked.
 
 The task: read a bank/UPI transaction description (e.g. `SWIGGY INSTAMART`, `BESCOM ELECTRICITY BILL`) and assign one of 11 spending categories. I chose this task because clean, consistently-labeled transaction data is exactly what fintech and finance annotation projects need, and it's a domain I know from years of bookkeeping.
 
@@ -17,12 +17,12 @@ The task: read a bank/UPI transaction description (e.g. `SWIGGY INSTAMART`, `BES
 
 ## Headline result
 
-Two annotators applying v1.2 of the guidelines to 40 transactions reached **Cohen's kappa = 0.807** ("almost perfect"), with 7 disagreements — every one of which was a guideline gap that became a fixed edge-case ruling.
+Two annotators applying v1.2 of the guidelines to 40 transactions reached **Cohen's kappa = 0.807** ("almost perfect"), with 7 disagreements - every one of which was a guideline gap that became a fixed edge-case ruling.
 
 ## The quality loop this demonstrates
 
 ```
-write guidelines → label independently → measure agreement → inspect disagreements → tighten rules → re-label
+write guidelines -> label independently -> measure agreement -> inspect disagreements -> tighten rules -> re-label
 ```
 
 This is the core of reliable data labeling: the guidelines, not the annotators, are what you debug. Every disagreement is treated as a missing rule, not a mistake.
@@ -33,7 +33,7 @@ This is the core of reliable data labeling: the guidelines, not the annotators, 
 python analysis/agreement.py
 ```
 
-No external libraries — Cohen's kappa is computed from first principles so the math is easy to verify by hand.
+No external libraries - Cohen's kappa is computed from first principles so the math is easy to verify by hand.
 
 ---
 
