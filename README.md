@@ -1,5 +1,12 @@
 # Annotation Guidelines Toolkit - Transaction Categorization
 
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Data-Annotation-1F4E78?style=flat-square" alt="Data Annotation" />
+  <img src="https://img.shields.io/badge/Agreement-kappa%200.81-success?style=flat-square" alt="Inter-annotator agreement" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License MIT" />
+</p>
+
 A complete, small data-annotation project: a **guidelines document**, a **hand-labeled sample dataset**, and an **inter-annotator agreement** check. It shows annotation from the side that matters most for quality - writing the rules that make labeling consistent, then measuring whether they worked.
 
 The task: read a bank/UPI transaction description (e.g. `SWIGGY INSTAMART`, `BESCOM ELECTRICITY BILL`) and assign one of 11 spending categories. I chose this task because clean, consistently-labeled transaction data is exactly what fintech and finance annotation projects need, and it's a domain I know from years of bookkeeping.
